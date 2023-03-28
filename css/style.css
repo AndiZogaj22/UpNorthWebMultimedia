@@ -36,6 +36,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background: rgb(43, 64, 97);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 section {
