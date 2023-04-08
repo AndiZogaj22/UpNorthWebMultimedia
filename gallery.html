@@ -16,6 +16,236 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-  
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpNorth Travel</title>
+    <link rel="shortcut icon" type="x-icon" href="./Images/Logo.jpg">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+    <script src="./js/modal.js"></script>
+</head>
+<body>
+  <body>
+        <style>
+  .image-container {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.1s ease;
+
+  }
+   .image-container:hover img {
+  transform: scale(0.8);
+  }
+
+  .overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(217, 199, 199, 0.5);
+   color: white;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+   .overlay h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  h5{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding: 35px;
+    margin-top: 85px;
+    
+  }
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+header{
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand{
+  color: #000000;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation{
+  position: relative;
+}
+
+header .navigation .navigation-items a{
+  position: relative;
+  color: #000000;
+  font-size: 2em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+  width: 100%;
+}
+        </style>
+        <div class="container-fluid">
+          <h5>Gallery of our past travel destinations</h5>
+          
+          <div class="row">
+            <div class="column">
+              <div id="modal" class="modal">
+                <div id="modal-content" class="modal-content"></div>
+              </div>
+        <header>
+          <a href="#" class="brand">UpNorth Travel</a>
+          <div class="menu-btn"></div>
+          <div class="navigation">
+            <div class="navigation-items">
+              <a href="home.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="explore.html">Explore</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </header>
+        
+        <div class="image-container" onclick="openModal('./galleryimages/1.jpg', 'Image 1 <br> a')">
+          <img src="./galleryimages/1.jpg" alt="Image 1" />
+          <div class="overlay">
+            <h1>Florence, Italy 2019</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/2.jpg', 'Image 2')">
+          <img src="./galleryimages/2.jpg" alt="Image 2" />
+          <div class="overlay">
+            <h1>Rio de Janeiro, Brazil 2019</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/3.jpg', 'Image 3')">
+          <img src="./galleryimages/3.jpg" alt="Image 3" />
+          <div class="overlay">
+            <h1>Venice, Italy 2018</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/14.jpg', 'Image 14')">
+          <img src="./galleryimages/14.jpg" alt="Image 14" />
+          <div class="overlay">
+            <h1>Oslo, Norway 2021</h1>
+          </div>
+        </div>
+        
+      </div>
+      <div class="column">
+        <div class="image-container" onclick="openModal('./galleryimages/6.jpg', 'Image 6')">
+          <img src="./galleryimages/6.jpg" alt="Image 6" />
+          <div class="overlay">
+            <h1>Lisbon, Portugal 2022</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/7.jpg', 'Image 7')">
+          <img src="./galleryimages/7.jpg" alt="Image 7" />
+          <div class="overlay">
+            <h1>Prague, Czech Republic 2023</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/8.jpg', 'Image 8')">
+          <img src="./galleryimages/8.jpg" alt="Image 8" />
+          <div class="overlay">
+            <h1>Budapest, Hungary 2023</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/4.jpg', 'Image 4')">
+          <img src="./galleryimages/4.jpg" alt="Image 4" />
+          <div class="overlay">
+            <h1>Paris, France 2017</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/9.jpg', 'Image 9')">
+          <img src="./galleryimages/9.jpg" alt="Image 9" />
+          <div class="overlay">
+            <h1>Athens, Greece 2020</h1>
+          </div>
+        </div>
+        
+      </div>
+      <div class="column">
+        <div class="image-container" onclick="openModal('./galleryimages/13.jpg', 'Image 13')">
+          <img src="./galleryimages/13.jpg" alt="Image 13" />
+          <div class="overlay">
+            <h1>Istanbul, Turkey 2016</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/11.jpg', 'Image 11')">
+          <img src="./galleryimages/11.jpg" alt="Image 11" />
+          <div class="overlay">
+            <h1>Cairo, Egypt 2018</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/12.jpg', 'Image 12')">
+          <img src="./galleryimages/12.jpg" alt="Image 12" />
+          <div class="overlay">
+            <h1>Dubrovnik, Croatia 2021</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/10.jpg', 'Image 10')">
+          <img src="./galleryimages/10.jpg" alt="Image 10" />
+          <div class="overlay">
+            <h1>Split, Croatia 2023</h1>
+          </div>
+        </div>
+        <div class="image-container" onclick="openModal('./galleryimages/5.jpg', 'Image 5')">
+          <img src="./galleryimages/5.jpg" alt="Image 5" />
+          <div class="overlay">
+            <h1>Rome, Italy 2017</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</body>
+</html>
+
 </body>
 </html>
