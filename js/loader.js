@@ -1,5 +1,4 @@
-
-        // hide preloader when page is loaded
+// hide preloader when page is loaded
 document.onreadystatechange = function() {
   if (document.readyState !== "complete") {
     document.querySelector("#loader-wrapper").style.display = "block";
@@ -7,5 +6,3 @@ document.onreadystatechange = function() {
     document.querySelector("#loader-wrapper").style.display = "none";
   }
 };
-
-    
