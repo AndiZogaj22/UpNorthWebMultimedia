@@ -4,22 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UpNorth Travel</title>
+    <link rel="shortcut icon" type="x-icon" href="./Images/Logo.jpg">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <script src="./js/loader.js"></script>
+    <!--We made the parallax effect using GSAP scroll trigger-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    
 </head>
 <body>
-    <div class="about-section">
-        <div class="inner-container">
-            <h1>About Us</h1>
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-            </p>
-            <div class="skills">
-                <span>Web Design</span>
-                <span>Photoshop & Illustrator</span>
-                <span>Coding</span>
-            </div>
-        </div>
+    <section>
+        <img src="./parallaximages/bg.jpg" alt="bg" id="bg">
+        <h2 id="text">UpNorth</h2>
+        <img src="./parallaximages/man.png" alt="man" id="man">
+        <img src="./parallaximages/clouds_1.png" alt="clouds_1" id="clouds_1">
+        <img src="./parallaximages/clouds_2.png" alt="clouds_2" id="clouds_2">
+        <img src="./parallaximages/mountain_left.png" alt="mountain_left" id="mountain_left">
+        <img src="./parallaximages/mountain_right.png" alt="mountain_right" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>UpNorth Travel Agency</h2>
+        <p>UpNorth Travel is a reputable travel agency that specializes in providing travel services to individuals and groups seeking to explore the beauty and diversity of destinations in the northern regions of the world. With years of experience in the travel industry, UpNorth Travel has established itself as a reliable and trusted partner for travelers looking for unique and unforgettable travel experiences.
+
+            One of the key strengths of UpNorth Travel is its commitment to customer satisfaction. The agency has a team of highly trained and knowledgeable travel experts who work tirelessly to provide personalized travel solutions that meet the specific needs and preferences of their clients. Whether you are planning a family vacation, a romantic getaway, or a group adventure, UpNorth Travel has got you covered.
+            
+            The agency offers a wide range of travel services, including flight bookings, hotel reservations, car rentals, tour packages, and travel insurance. They also specialize in organizing adventure tours, cultural expeditions, and wildlife safaris to some of the most fascinating destinations in the northern hemisphere.
+            
+            UpNorth Travel is known for its attention to detail and its ability to create customized travel itineraries that cater to the unique interests and preferences of its clients. Whether you want to explore the snow-capped mountains of Scandinavia, witness the Northern Lights in Iceland, or embark on a dog-sledding adventure in Alaska, the agency has a team of experts who can help you plan and execute your dream vacation.
+            In addition to its travel services, UpNorth Travel is also committed to sustainable tourism and responsible travel practices. The agency works closely with local communities and stakeholders to promote sustainable tourism initiatives that minimize the impact of tourism on the environment and local cultures.
+            
+            Overall, UpNorth Travel is a highly reputable and reliable travel agency that offers a wide range of travel services to individuals and groups seeking to explore the northern regions of the world. With its commitment to customer satisfaction, attention to detail, and sustainable tourism practices, UpNorth Travel is the go-to agency for travelers looking for unique and unforgettable travel experiences</p>
     </div>
+<script>
+    gsap.to("#bg",{
+        scrollTrigger :{
+            scrub : 1
+        },
+        scale : 10.5
+    });
+
+    gsap.to("#man",{
+        scrollTrigger :{
+            scrub : 1
+        },
+        scale : 0.5
+    });
+
+    gsap.to("#mountain_left",{
+        scrollTrigger :{
+            scrub : 1
+        },
+       x : -500,
+    });
+
+    gsap.to("#mountain_right",{
+        scrollTrigger :{
+            scrub : 1
+        },
+       x : 500,
+    });
+
+    gsap.to("#clouds_1",{
+        scrollTrigger :{
+            scrub : 1
+        },
+       x : 200,
+    });
+
+    gsap.to("#clouds_2",{
+        scrollTrigger :{
+            scrub : 1
+        },
+       x : -200,
+    });
+
+    gsap.to("#text",{
+        scrollTrigger :{
+            scrub : 1
+        },
+       y : 500,
+    });
+</script>
 </body>
 </html>

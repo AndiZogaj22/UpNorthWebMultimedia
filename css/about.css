@@ -1,75 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 *{
-    margin: 0;
     padding: 0;
-    font-family: "Open Sans",sans-serif;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
-
-body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-}
-
-.about-section{
-    background: url(../Images/pic.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
-    padding: 100px 0;
-}
-
-.inner-container{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 150px;
-}
-
-.inner-container h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
-
-.skills{
     display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    background: #000;
 }
-
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    background: linear-gradient(to top,#fff,transparent);
+    z-index: 10000;
 }
-
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
-
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .inner-container{
-        padding: 60px;
-    }
+section img#man{
+transform-origin: bottom;
+}
+#text{
+    position: absolute;
+    color: #fff;
+    font-size: 10vw;
+}
+.sec{
+    position: relative;
+    padding: 100px;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #20496a;
+}
+.sec p{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #20496a;
 }
