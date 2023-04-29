@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <title>UpNorth Travel</title>
     <link rel="shortcut icon" type="x-icon" href="./Images/Logo.jpg">
     <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/loader.css">
-    <script src="./js/loader.js"></script>
-    <!--We made the parallax effect using GSAP scroll trigger-->
+
+
+    <!--We made the parallax effect and the scrolling effct using GSAP scroll trigger-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     
 </head>
 <body>
-    <section>
+    <section class="parallax-section">
         <img src="./parallaximages/bg.jpg" alt="bg" id="bg">
         <h2 id="text">UpNorth</h2>
         <img src="./parallaximages/man.png" alt="man" id="man">
@@ -24,9 +29,10 @@
         <img src="./parallaximages/mountain_left.png" alt="mountain_left" id="mountain_left">
         <img src="./parallaximages/mountain_right.png" alt="mountain_right" id="mountain_right">
     </section>
+    <div data-aos="zoom-in-down">
+
     <div class="sec">
-        
-        <h2>Our Story</h2>
+        <h2>Our achievements throughout the years</h2>
         <p>UpNorth Travel is a reputable travel agency that specializes in providing travel services to individuals and groups seeking to explore the beauty and diversity of destinations in the northern regions of the world. With years of experience in the travel industry, UpNorth Travel has established itself as a reliable and trusted partner for travelers looking for unique and unforgettable travel experiences.
             One of the key strengths of UpNorth Travel is its commitment to customer satisfaction. The agency has a team of highly trained and knowledgeable travel experts who work tirelessly to provide personalized travel solutions that meet the specific needs and preferences of their clients. Whether you are planning a family vacation, a romantic getaway, or a group adventure, UpNorth Travel has got you covered.
             The agency offers a wide range of travel services, including flight bookings, hotel reservations, car rentals, tour packages, and travel insurance. They also specialize in organizing adventure tours, cultural expeditions, and wildlife safaris to some of the most fascinating destinations in the northern hemisphere.
@@ -34,26 +40,70 @@
             In addition to its travel services, UpNorth Travel is also committed to sustainable tourism and responsible travel practices. The agency works closely with local communities and stakeholders to promote sustainable tourism initiatives that minimize the impact of tourism on the environment and local cultures.
             Overall, UpNorth Travel is a highly reputable and reliable travel agency that offers a wide range of travel services to individuals and groups seeking to explore the northern regions of the world. With its commitment to customer satisfaction, attention to detail, and sustainable tourism practices, UpNorth Travel is the go-to agency for travelers looking for unique and unforgettable travel experiences</p>
     </div>
-    <div class="second-container">
+</div>
+<div data-aos="zoom-out">
+
+    <h5 id="stats">Fast Stats...</h5>
+    <div class="space">
+        <div class="wrapper-num ">
+            <div class="container-num">
+              <i class="fas fa-utensils"></i>
+              <span class="num" data-val="900">000</span>
+              <span class="text">Total Costumers</span>
+            </div>
+            <div class="container-num">
+              <i class="fas fa-smile-beam"></i>
+              <span class="num" data-val="500">000</span>
+              <span class="text">Total Flights</span>
+            </div>
+            <div class="container-num">
+              <i class="fas fa-list"></i>
+              <span class="num" data-val="725">000</span>
+              <span class="text">Total 5 Star Ratings</span>
+            </div>
+            <div class="container-num">
+              <i class="fas fa-star"></i>
+              <span class="num" data-val="100">000</span>
+              <span class="text">Total Countries Visited</span>
+            </div>
+          </div>
+    </div>
+</div>
+      <div class="second-container">
         <div class="second-section">
             <div class="content">
-                <h1>Section One</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt blanditiis laboriosam voluptate tempore sapiente cum consequuntur sequi incidunt tenetur? Eius inventore voluptatem obcaecati dicta minus excepturi impedit. Illum, blanditiis!</p>
+                <div data-aos="fade-down-left"><h1 id="extra-2">Our Founding</h1></div>
+                <div data-aos="fade-down-left">
+                
+                </div>
+                <div data-aos="fade-down-left"><p> In 2002, UpNorth Travel was founded by John Smith with a passion for exploring the beauty and diversity of the world.
+                    Initially, the agency focused on providing personalized travel solutions to individuals and small groups seeking unique and unforgettable travel experiences.</p>
+                </div>
             </div>
         </div>
         <div class="second-section">
             <div class="content">
-                <h1>Section Two</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt blanditiis laboriosam voluptate tempore sapiente cum consequuntur sequi incidunt tenetur? Eius inventore voluptatem obcaecati dicta minus excepturi impedit. Illum, blanditiis!</p> 
+                <div data-aos="fade-down-left"><h1>The Growth</h1></div>
+                <div data-aos="fade-down-left"> <p>  Through hard work and dedication to customer satisfaction, UpNorth Travel quickly established a reputation as a trusted and reliable partner in the travel industry.
+                    Over the years, the agency expanded its services to include flight bookings, hotel reservations, car rentals, tour packages, and travel insurance, among others.
+                    Today, UpNorth Travel is known for its attention to detail, sustainable tourism practices, and its ability to create customized travel itineraries that cater to the unique interests and preferences of its clients.</p></div>
+                
             </div>
         </div>
         <div class="second-section">
             <div class="content">
-                <h1>Section Three</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt blanditiis laboriosam voluptate tempore sapiente cum consequuntur sequi incidunt tenetur? Eius inventore voluptatem obcaecati dicta minus excepturi impedit. Illum, blanditiis!</p>               
-            </div>
+                <div data-aos="fade-down-left"><h1 id="extra">Our Bussines Model</h1></div>
+                <div data-aos="fade-down-left"> <p>UpNorth Travel's business model is centered around providing personalized and sustainable travel solutions to individuals and groups seeking to explore the beauty and diversity of the northern regions of the world. The agency generates revenue by offering a range of travel services, including flight bookings, hotel reservations, car rentals, tour packages, and travel insurance, among others. UpNorth Travel's competitive advantage lies in its ability to create customized travel itineraries that cater to the unique interests and preferences of its clients, while also promoting responsible and sustainable tourism practices. The agency's focus on customer satisfaction, attention to detail, and commitment to sustainable tourism has helped to establish its reputation as a trusted and reliable partner in the travel industry.</p></div>
+               </div>
         </div>
     </div>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
 <script>
     gsap.to("#bg",{
         scrollTrigger :{
@@ -103,6 +153,22 @@
         },
        y : 500,
     });
+</script>
+<script>
+    let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
 </script>
 </body>
 </html>
