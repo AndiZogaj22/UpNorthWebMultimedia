@@ -34,11 +34,11 @@ transition: 0.25s ease all;
 
 
 .dog {
-background: url('./images/1.jpg');
+background: url('/images/4.jpg');
 }
 
 .cat {
-background: url('./images/2.jpg');
+background: url('./images/1.jpg');
 }
 
 

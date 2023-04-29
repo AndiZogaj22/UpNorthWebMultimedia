@@ -1,11 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+
+body{
+  overflow-x: hidden;
+
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    
 }
 .parallax-section{
     position: relative;
@@ -27,6 +33,7 @@
     background: #fff;
     background: linear-gradient(to top,#fff,transparent);
     z-index: 10000;
+    
 }
 .parallax-section img{
     position: absolute;
@@ -39,6 +46,7 @@
 }
 .parallax-section img#man{
 transform-origin: bottom;
+
 }
 #text{
     position: absolute;
@@ -48,50 +56,33 @@ transform-origin: bottom;
 .sec{
     position: relative;
     padding: 100px;
+    
 }
 .sec h2{
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #20496a;
+    margin-left: 365px;
 }
-.sec p{
-    font-size: 1.2em;
+.sec .video-vid{
     margin-bottom: 10px;
-    color: #20496a;
+    display: block;
+  
+    margin: auto;  
 }
+
 .sec h1{
     font-size: 4em;
     margin-bottom: 10px;
     color: #0a8efa;
 }
 
-header{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: linear-gradient(135deg, rgba(79,0,255,1) 0%, rgba(65,232,237,1) 100%);
-}
-
-header h1{
-    font-size: 4rem;
-}
-header h2{
-    font-size: 1.75rem;
-    text-align: center;
-}
-
-a {
-    color: white;
-    margin: 1rem;
-}
 
 
 .wrapper{
     font-family: 'Comfortaa', sans-serif;
     display: flex;
+    
 }
 
 #about{
@@ -170,26 +161,7 @@ a {
       #extra-2{
           margin-bottom: 400px;
       }
-      .ceo-content img{
-         width:  550px;
-         height: 400px;
-         
-         margin-left: 20px;
-      }
-      .ceo-content {
-          margin-top: 40px;
-      }
-      .ceo-content h5{
-          margin-left: 20px;
-          background: #fff;
-           color: #111;
-  font-weight: 600;
-  display: inline-block;
-  
-  font-size: 1em;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
-      }
+      
 
 
 .wrapper-num {
