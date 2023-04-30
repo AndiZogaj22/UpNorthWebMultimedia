@@ -76,9 +76,15 @@ transform-origin: bottom;
     margin-bottom: 10px;
     color: #0a8efa;
 }
-
-
-
+@media screen and (max-width: 1024px) {
+  .sec {
+    width: 300px;
+    margin-right: 100px;
+  }
+  h2{
+    width: 300px;
+  }
+  }
 .wrapper{
     font-family: 'Comfortaa', sans-serif;
     display: flex;
