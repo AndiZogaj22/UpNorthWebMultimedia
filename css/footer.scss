@@ -1,0 +1,86 @@
+.footer{
+
+    .box-container{
+        @include grid(25rem);
+
+        .box{
+            padding:1rem 0;
+
+            .logo{
+                padding-bottom: 1rem;
+            }
+
+            h3{
+                font-size: 2.2rem;
+                color:$white;
+                padding:1rem 0;
+            }
+
+            p{
+                font-size: 1.4rem;
+                color:$light-color;
+                padding:1rem 0;
+                line-height: 2;
+
+                i{
+                    padding-right: .5rem;
+                    color:$blue;
+                }
+            }
+
+            .share{
+                padding-top: 1rem;
+
+                a{
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4rem;
+                    font-size: 2rem;
+                    border-radius: 50%;
+                    font-size: 1.7rem;
+                    border:$border;
+                    color:$blue;
+                    margin-right: .5rem;
+                    text-align: center;
+
+                    &:hover{
+                        background: $blue;
+                        color:$black;
+                    }
+                }
+            }
+
+            .links{
+                font-size: 1.4rem;
+                color:$light-color;
+                padding:1rem 0;
+                display: block;
+
+                &:hover{
+                    color:$blue;
+
+                    i{
+                        padding-right: 2rem;
+                    }
+                }
+
+                i{
+                    padding-right: .5rem;
+                    color:$blue;
+                }
+            }
+
+            form .email{
+                width: 100%;
+                border-radius: 5rem;
+                border:$border;
+                background: none;
+                font-size: 1.5rem;
+                text-transform: none;
+                color:$light-color;
+                margin-bottom: 1rem;
+                padding:1.2rem 1.4rem;
+            }
+        }
+    }
+}
