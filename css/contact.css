@@ -62,7 +62,7 @@ textarea {
 }
 
 .container .contact_data h2 {
-  margin: 1.5rem;
+  margin: 2rem;
   border-bottom: 0.2rem #47b2e4 solid;
   width: 25%;
 }
@@ -107,7 +107,7 @@ textarea {
 }
 
 .container .contact_data2 ul li i {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #47b2e4;
 }
 
@@ -131,7 +131,9 @@ textarea {
   .container .contact_data,
   .contact_data2 {
     width: 80%;
-    margin: 10px 0px;
+    margin: 50px 50px;
+    margin-bottom: 300px;
+    
   }
   .container .contact_data h2 {
     width: 50%;
@@ -141,7 +143,9 @@ textarea {
 @media (max-width: 768px) {
   .container .contact_data2 {
     width: 75%;
-    margin: 10px 0px;
+    margin: 50px 50px;
+    margin-bottom: 100px;
+
   }
   .container .contact_data h2 {
     width: 50%;
@@ -202,7 +206,7 @@ body {
 }
 
 .wrapper  ul li.whatsapp{
-  background: #4dc247;
+  background: #1a1d35;
 }
 
 .wrapper  ul li.facebook div.slider{
@@ -222,7 +226,7 @@ body {
 }
 
 .wrapper  ul li.whatsapp div.slider{
-  background: #82d47e;
+  background: #1a1d35;
 }
 
 .slider {
@@ -259,16 +263,23 @@ body {
   transition: all 1s 0.2s ease;
 }
 @media (max-width: 1037px) {
-  .wrapper  {
+  .wrapper > *  {
    margin-left: auto;
-
+   display: flex;
+   flex-direction: row;
+ margin-right: 300px;
+ margin-top: 250px;
   }
  
 }
 
 @media (max-width: 768px) {
   .wrapper {
-    margin-left: auto 
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+  margin-right: 300px;
+  margin-top: 20px;
 
   }
   
