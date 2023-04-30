@@ -53,38 +53,50 @@ transform-origin: bottom;
     color: #fff;
     font-size: 10vw;
 }
-.sec{
-    position: relative;
-    padding: 100px;
-    
-}
+
 .sec h2{
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #20496a;
-    margin-left: 365px;
-}
-.sec .video-vid{
-    margin-bottom: 10px;
-    display: block;
-  
-    margin: auto;  
 }
 
-.sec h1{
-    font-size: 4em;
-    margin-bottom: 10px;
-    color: #0a8efa;
+.sec {
+  max-width: 800px; /* set the maximum width of the container */
+  margin: 0 auto; /* center the container horizontally */
+  padding: 20px; /* add some padding to the container */
+  box-sizing: border-box; /* include padding and border in the width of the container */
+  padding-top: 50px;
 }
-@media screen and (max-width: 1024px) {
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 480px) {
   .sec {
-    width: 300px;
-    margin-right: 100px;
+    padding: 10px; /* decrease the padding for smaller screens */
   }
-  h2{
-    width: 300px;
+  
+  .video-wrapper {
+    padding-bottom: 75%; /* adjust aspect ratio for smaller screens */
   }
+  h2 {
+    font-size: 24px; /* decrease font size for smaller screens */
   }
+}
+
+
 .wrapper{
     font-family: 'Comfortaa', sans-serif;
     display: flex;
@@ -148,9 +160,9 @@ transform-origin: bottom;
   font-weight: 600;
   display: inline-block;
   padding: 10px 20px;
-  font-size: 5em;
+  font-size: 4em;
   font-family: 'Playfair Display', serif;
-    margin-bottom: 150px;
+    
   }
   .second-container .second-section .content p{
       color: white;
@@ -161,13 +173,8 @@ transform-origin: bottom;
       margin-bottom: 10vh;
       font-family: 'Playfair Display', serif;
     }
-      #extra{
-          margin-bottom: 30px;
-      }
-      #extra-2{
-          margin-bottom: 400px;
-      }
-      
+   
+
 
 
 .wrapper-num {
