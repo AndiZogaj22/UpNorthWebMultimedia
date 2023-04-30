@@ -8,6 +8,8 @@
     <link rel="shortcut icon" type="x-icon" href="./Images/Logo.jpg">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header.scss">
     <script src="js/loader.js"></script>
 </head>
 <body>
@@ -102,5 +104,15 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    //Javacript for responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+</script>
 </body>
 </html>

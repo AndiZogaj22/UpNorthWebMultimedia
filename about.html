@@ -11,7 +11,9 @@
     <link rel="shortcut icon" type="x-icon" href="./Images/Logo.jpg">
     <link rel="stylesheet" href="./css/about.css">
 
-
+    <!--links for header styling -->
+    <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href= "css/header.scss">
     <!--We made the parallax effect and the scrolling effct using GSAP scroll trigger-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
@@ -20,6 +22,19 @@
     
 </head>
 <body>
+    <header>
+        <a href="#" class="brand">UpNorth Travel</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="explore.html">Explore</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </header>
     <section class="parallax-section">
         <img src="./parallaximages/bg.jpg" alt="bg" id="bg">
         <h2 id="text">UpNorth</h2>
@@ -94,6 +109,10 @@
                </div>
         </div>
     </div>
+    <!--Footer-->>
+<div class="space">
+
+</div>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -165,6 +184,16 @@ valueDisplays.forEach((valueDisplay) => {
       clearInterval(counter);
     }
   }, duration);
+});
+</script>
+<script>
+    //Javacript for responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
 });
 </script>
 </body>

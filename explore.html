@@ -2,68 +2,38 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Split Screen</title>
-
-      <link href="normalize.css" rel="stylesheet">
-      <link href="style.css" rel="stylesheet">
-      <link rel="stylesheet" href="./css/explore.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-
+      <title>Document</title>
+      <link rel="stylesheet" href="css/explore.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/header.scss">
+      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-
-      <div class="wrapper">
-
-            <div class="side left">
-                  <div class="image dog"></div>
-                  <div class="caption">
-                        <h1>Dogs</h1>
-                        <a class="button" href="#">See our dogs</a>
+      <body style="background-color: lightcoral;">
+            <header>
+                  <a href="#" class="brand">UpNorth Travel</a>
+                  <div class="menu-btn"></div>
+                  <div class="navigation">
+                    <div class="navigation-items">
+                      <a href="home.html">Home</a>
+                      <a href="about.html">About</a>
+                      <a href="explore.html">Explore</a>
+                      <a href="gallery.html">Gallery</a>
+                      <a href="contact.html">Contact</a>
+                    </div>
                   </div>
-            </div>
-
-            <div class="side right">
-                  <div class="image cat"></div>
-                  <div class="caption">
-                        <h1>Cats</h1>
-                        <a class="button" href="#">See our cats</a>
-                  </div>
-            </div>
-            <div class="side left">
-                <div class="image dog"></div>
-                <div class="caption">
-                      <h1>Dogs</h1>
-                      <a class="button" href="#">See our dogs</a>
-                </div>
-          </div>
-
-          <div class="side right">
-                <div class="image cat"></div>
-                <div class="caption">
-                      <h1>Cats</h1>
-                      <a class="button" href="#">See our cats</a>
-                </div>
-          </div>
-          <div class="side left">
-            <div class="image dog"></div>
-            <div class="caption">
-                  <h1>Dogs</h1>
-                  <a class="button" href="#">See our dogs</a>
-            </div>
-      </div>
-
-      <div class="side right">
-            <div class="image cat"></div>
-            <div class="caption">
-                  <h1>Cats</h1>
-                  <a class="button" href="#">See our cats</a>
-            </div>
-      </div>
-      </div>
-
-      
+                </header>
+            <script>
+                  //Javacript for responsive navigation menu
+              const menuBtn = document.querySelector(".menu-btn");
+              const navigation = document.querySelector(".navigation");
+              
+              menuBtn.addEventListener("click", () => {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+              });
+              </script>
 </body>
 </html>
