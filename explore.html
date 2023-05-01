@@ -6,34 +6,44 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
       <link rel="stylesheet" href="css/explore.css">
-      <link rel="stylesheet" href="css/header.css">
-      <link rel="stylesheet" href="css/header.scss">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-      <body style="background-color: lightcoral;">
-            <header>
-                  <a href="#" class="brand">UpNorth Travel</a>
-                  <div class="menu-btn"></div>
-                  <div class="navigation">
-                    <div class="navigation-items">
-                      <a href="home.html">Home</a>
-                      <a href="about.html">About</a>
-                      <a href="explore.html">Explore</a>
-                      <a href="gallery.html">Gallery</a>
-                      <a href="contact.html">Contact</a>
-                    </div>
+<body id="top">
+  <main>
+    <article>
+      <!-- - #POPULAR -->
+      <section class="popular" id="destination">
+        <div class="container">
+          <h2 class="h2 section-title">Popular destination for 2023</h2>
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
                   </div>
-                </header>
-            <script>
-                  //Javacript for responsive navigation menu
-              const menuBtn = document.querySelector(".menu-btn");
-              const navigation = document.querySelector(".navigation");
+                  <p class="card-subtitle">
+                    <a href="#">Italy</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">San miguel</a>
+                  </h3>
+                  <p class="card-text">
+                    Make Your Reservation For San Miguel In Italy Right Now
+                  </p>
+                </div>
+              </div>
               
-              menuBtn.addEventListener("click", () => {
-                menuBtn.classList.toggle("active");
-                navigation.classList.toggle("active");
-              });
-              </script>
 </body>
 </html>
