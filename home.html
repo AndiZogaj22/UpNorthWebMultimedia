@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="x-icon" href="./Images/Logo.jpg">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
@@ -17,15 +16,11 @@
     <!-- custom js file link  -->
     <script src="js/script.js" defer></script>
     <script src="js/loader.js"></script>
-
-    
 </head>
 <body>
     <div id="loader-wrapper">
         <img id="loader" src="loader.gif" alt="Loading...">
-      </div>
-      
-      
+      </div> 
 <header>
     <a href="#" class="brand">UpNorth Travel</a>
     <div class="menu-btn"></div>
@@ -95,7 +90,6 @@
     </div>
 </section>
 <section class="destination" id="destination">
-
     <div class="heading">
         <span>our top destination for 2023</span>
         <h1>make yours destination</h1>
@@ -154,7 +148,6 @@
     </div>
 </section>
 <section class="services" id="services">
-
     <div class="heading">
         <span>our services</span>
         <h1>countless expericences</h1>
@@ -183,15 +176,12 @@
     </div>
 </section>
 <section class="review">
-
     <div class="content" data-aos="fade-right" data-aos-delay="300">
         <span>testimonials</span>
         <h3>good news from our clients</h3>
         <p>Customer service is essential to any travel agency, including UpNorth Travel. It plays a vital role in establishing customer loyalty and satisfaction, leading to repeat business and positive word-of-mouth recommendations. Good customer service helps to build trust, address customer concerns, and ensure a seamless travel experience. </p>
     </div>
-
     <div class="box-container" data-aos="fade-left" data-aos-delay="600">
-
         <div class="box">
             <p>"You did a fabulous job. There were no hitches. Thank you again for all your work planning this trip."</p>
             <div class="user">
@@ -232,19 +222,14 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </section>
 <section class="blogs" id="blogs">
-
     <div class="heading">
         <span>blogs & Posts</span>
         <h1>We Unfold Stories</h1>
     </div>
-
     <div class="box-container">
-
         <div class="box" data-aos="fade-up" data-aos-delay="150">
             <div class="image">
                 <img src="images/blog-1.jpg" alt="">
@@ -266,7 +251,6 @@
                 <p>UpNorth Travels blogs for july 2021</p>
                 <div class="icon">
                     <a href="#"><i class="fas fa-clock"></i>july, 2021</a>
-                    
                 </div>
             </div>
         </div>
@@ -279,20 +263,16 @@
                 <p>UpNorth Travels blogs for june 2022</p>
                 <div class="icon">
                     <a href="#"><i class="fas fa-clock"></i>june, 2022</a>
-                    
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <div class="banner">
-
     <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
         <span>start your adventures</span>
         <h3>Let's Explore This World</h3>
     </div>
-
 </div>
 <section class="footer">
     <div class="box-container">
@@ -330,7 +310,6 @@
         </div>
     </div>
 </section>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init({
@@ -347,30 +326,24 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   navigation.classList.toggle("active");
 });
-
     //Javacript for video slider navigation
     const btns = document.querySelectorAll(".nav-btn");
     const slides = document.querySelectorAll(".video-slide");
     const contents = document.querySelectorAll(".content");
-
     var sliderNav = function(manual){
       btns.forEach((btn) => {
         btn.classList.remove("active");
       });
-
       slides.forEach((slide) => {
         slide.classList.remove("active");
       });
-
       contents.forEach((content) => {
         content.classList.remove("active");
       });
-
       btns[manual].classList.add("active");
       slides[manual].classList.add("active");
       contents[manual].classList.add("active");
     }
-
     btns.forEach((btn, i) => {
       btn.addEventListener("click", () => {
         sliderNav(i);
