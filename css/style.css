@@ -34,7 +34,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: rgb(43, 64, 97);
+  background: rgb(88, 149, 247);
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -52,7 +52,7 @@ section {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.7rem;
-  color: #ebcd46;
+  color: #000000;
   border: 0.2rem solid #f0ffff;
   border-radius: 5rem;
   cursor: pointer;
