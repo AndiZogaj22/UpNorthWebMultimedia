@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <title>UpNorth Travel</title>
+
     <link rel="shortcut icon" type="x-icon" href="./Images/Logo.jpg">
     <link rel="stylesheet" href="./css/about.css">
     <!--links for header styling -->
@@ -18,9 +19,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+
+    <!--Loader-->
+    <script src="js/loader.js"></script>
+    <link rel="stylesheet" href="css/loader.css">
     
 </head>
 <body>
+    <div id="loader-wrapper">
+        <img id="loader" src="loader.gif" alt="Loading...">
+      </div> 
     <header>
         <a href="#" class="brand">UpNorth Travel</a>
         <div class="menu-btn"></div>
@@ -108,11 +117,6 @@
                </div>
         </div>
     </div>
-    <!--Footer-->
-<div class="space">
-
-</div>
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

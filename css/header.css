@@ -101,7 +101,7 @@ header{
     }
   
     .menu-btn{
-      background: url(/images/menu.png)no-repeat;
+      background: url(./images/menu.png)no-repeat;
       background-size: 30px;
       background-position: center;
       width: 40px;
