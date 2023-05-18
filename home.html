@@ -21,6 +21,38 @@
     <div id="loader-wrapper">
         <img id="loader" src="loader.gif" alt="Loading...">
       </div> 
+      <!--Cookie box here-->
+      <div class="popup">
+        <div class="cookies-box">
+            <span id="close-cookie">&times;</span>
+            <img src="./cookie.png" alt="" id="cookie-img">
+            <h3>Cookies and Privacy</h3>
+            <p>This website uses cookies to ensure you to get the best experience on our website</p>
+            <button class="accept" >Accept Cookies</button>
+          
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+document.querySelector(".popup").style.
+display = "block"
+        },
+        7000
+    )
+})
+        document.querySelector("#close-cookie").addEventListener
+        ("click", function(){
+            document.querySelector(".popup").style.display=
+            "none"
+        })
+        document.querySelector(".accept").addEventListener
+        ("click", function(){
+            document.querySelector(".popup").style.display=
+            "none"
+        })
+    </script>
 <header>
     <a href="#" class="brand">UpNorth Travel</a>
     <div class="menu-btn"></div>
@@ -350,5 +382,6 @@ menuBtn.addEventListener("click", () => {
       });
     });
     </script>
+  
 </body>
 </html>
