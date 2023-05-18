@@ -5,9 +5,12 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  
 }
 
 body {
+  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+
   overflow-x: hidden;
   overflow-y: hidden;
   max-width: 100%;
@@ -16,6 +19,8 @@ body {
 .container{
   animation: color 12s ease-in-out infinite;
   background-size: 300% 300%;
+  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+
   
 }
 @keyframes color{
@@ -170,18 +175,12 @@ textarea {
   }
 }
 
-
-body {
-  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
-
-}
-
 .wrapper {
   position: absolute;
   top: 50%;
   right: 95%;
   transform: translate(-50%, -50%);
-  
+
 }
 
 .wrapper ul {
