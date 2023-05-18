@@ -259,3 +259,74 @@ header .navigation .navigation-items a:hover:before{
     line-height: 60px;
   }
 }
+
+.popup{
+background-color: #fff;
+width: 450px;
+padding: 30px 40px;
+position: absolute;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 50%;
+border-radius: 8px;
+font-family: sans-serif;
+display: none;
+}
+.popup p{
+font-size: 14px;
+text-align: justify;
+margin: 20px 0 ;
+
+}
+.cookies-box.active{
+left: 20px;
+}
+.cookies-box img{
+height: 110px;
+animation: image 10s linear infinite;
+margin-left: 170px;
+}
+@keyframes image{
+0%{
+transform: rotate(360deg);
+}
+}
+.cookies-box h3{
+color: #333;
+font-size: 23px;
+padding: 5px 0;
+text-align: center;
+}
+.cookies-box p{
+color: #666;
+font-size: 13px;
+font-size: 20px;
+padding: 5px 0;
+line-height: 1.8;
+text-align: center;
+}
+.cookies-box .accept{
+background: #fbb45f;
+color: #000000;
+font-size: 15px;
+border-radius: 5px;
+display: block;
+margin-left: 160px;
+padding: 20px;
+
+}
+.cookies-box .accept:hover{
+background-color: #4fff6f; 
+color: rgb(0, 0, 0);
+}
+.cookies-box  #close{
+position: absolute;
+top: -2px ;
+right: 12px;
+font-size: 40px;
+color: #999;
+cursor: pointer;
+}
+.cookies-box  #close{
+color: #333;
+}
