@@ -18,41 +18,12 @@
     <script src="js/loader.js"></script>
 </head>
 <body>
+    
     <div id="loader-wrapper">
         <img id="loader" src="loader.gif" alt="Loading...">
       </div> 
       <!--Cookie box here-->
-      <div class="popup">
-        <div class="cookies-box">
-            <span id="close-cookie">&times;</span>
-            <img src="./cookie.png" alt="" id="cookie-img">
-            <h3>Cookies and Privacy</h3>
-            <p>This website uses cookies to ensure you to get the best experience on our website</p>
-            <button class="accept" >Accept Cookies</button>
-          
-        </div>
-    </div>
-    <script>
-        window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-document.querySelector(".popup").style.
-display = "block"
-        },
-        7000
-    )
-})
-        document.querySelector("#close-cookie").addEventListener
-        ("click", function(){
-            document.querySelector(".popup").style.display=
-            "none"
-        })
-        document.querySelector(".accept").addEventListener
-        ("click", function(){
-            document.querySelector(".popup").style.display=
-            "none"
-        })
-    </script>
+    
 <header>
     <a href="#" class="brand">UpNorth Travel</a>
     <div class="menu-btn"></div>
@@ -66,12 +37,14 @@ display = "block"
       </div>
     </div>
   </header>
+  
   <section class="home">
     <video class="video-slide active" src="Videos/1.mp4" autoplay muted loop></video>
     <video class="video-slide" src="Videos/2.mp4" autoplay muted loop></video>
     <video class="video-slide" src="Videos/3.mp4" autoplay muted loop></video>
     <video class="video-slide" src="Videos/4.mp4" autoplay muted loop></video>
     <video class="video-slide" src="Videos/5.mp4" autoplay muted loop></video>
+    
     <div class="content active">
       <h1>Time to<br><span>travel</span></h1>
       <p>UpNorth Agency is a reputable travel agency that specializes in creating memorable travel experiences for clients seeking adventures. From the serene beauty of Scandinavia to the rugged wilderness of Alaska, UpNorth Agency offers a wide range of customizable travel packages that cater to every taste and budget. Their knowledgeable and friendly staff ensures that every trip is well-planned and executed seamlessly, leaving clients with unforgettable memories that last a lifetime.</p>
@@ -97,6 +70,18 @@ display = "block"
       <p>UpNorth Agency is a reputable travel agency that specializes in creating memorable travel experiences for clients seeking adventures. From the serene beauty of Scandinavia to the rugged wilderness of Alaska, UpNorth Agency offers a wide range of customizable travel packages that cater to every taste and budget. Their knowledgeable and friendly staff ensures that every trip is well-planned and executed seamlessly, leaving clients with unforgettable memories that last a lifetime.</p>
       <a href="#">Read More</a>
     </div>
+    <div class="popup">
+        <div class="cookies-box">
+            <span id="close-cookie">&times;</span>
+            <img src="./cookie.png" alt="" id="cookie-img">
+            <h3>Cookies and Privacy</h3>
+            <p>This website uses cookies to ensure you to get the best experience on our website</p>
+            <div class="button-wrapper">
+            <button class="accept" id="close-cookie" >Accept Cookies</button>
+           
+        </div>
+        </div>
+    </div>
     <div class="slider-navigation">
       <div class="nav-btn active"></div>
       <div class="nav-btn"></div>
@@ -105,6 +90,7 @@ display = "block"
       <div class="nav-btn"></div>
     </div>
   </section>
+  
 <section class="about" id="about">
     <div class="video-container" data-aos="fade-right" data-aos-delay="300">
         <video src="images/about-vid-1.mp4" muted autoplay loop class="video"></video>
@@ -382,6 +368,26 @@ menuBtn.addEventListener("click", () => {
       });
     });
     </script>
-  
+  <script>
+    window.addEventListener("load", function(){
+setTimeout(
+    function open(event){
+document.querySelector(".popup").style.
+display = "block"
+    },
+    2000
+)
+})
+    document.querySelector("#close-cookie").addEventListener
+    ("click", function(){
+        document.querySelector(".popup").style.display=
+        "none"
+    })
+    document.querySelector(".accept").addEventListener
+    ("click", function(){
+        document.querySelector(".popup").style.display=
+        "none"
+    })
+</script>
 </body>
 </html>

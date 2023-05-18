@@ -271,6 +271,8 @@ top: 50%;
 border-radius: 8px;
 font-family: sans-serif;
 display: none;
+z-index: 1000;
+position: relative;
 }
 .popup p{
 font-size: 14px;
@@ -284,7 +286,7 @@ left: 20px;
 .cookies-box img{
 height: 110px;
 animation: image 10s linear infinite;
-margin-left: 170px;
+margin-left: 120px;
 }
 @keyframes image{
 0%{
@@ -310,10 +312,7 @@ background: #fbb45f;
 color: #000000;
 font-size: 15px;
 border-radius: 5px;
-display: block;
-margin-left: 160px;
 padding: 20px;
-
 }
 .cookies-box .accept:hover{
 background-color: #4fff6f; 
@@ -329,4 +328,9 @@ cursor: pointer;
 }
 .cookies-box  #close{
 color: #333;
+}
+.button-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
