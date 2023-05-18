@@ -112,7 +112,31 @@
           </form>
         </div>
       </div>
+      <div class="container">
+        <button onclick="toggle()"  id="button" class="btn">Give Us A Rating</button>
+    </div>
+    <div class="popup-container">
+        <div class="popup">
+            <h3>how do you like our services</h3>
+            <input type="radio" name="buttons" id="btn1">
+            <input type="radio" name="buttons" id="btn2">
+            <input type="radio" name="buttons" id="btn3">
+            <input type="radio" name="buttons" id="btn4">
+            <input type="radio" name="buttons" id="btn5">
+            <div class="icons">
+                <label for="btn1">🙁</label>
+                <label for="btn2">😐</label>
+                <label for="btn3">😊</label>
+                <label for="btn4">😀</label>
+                <label for="btn5">😍</label>
+            </div>
+            <input onclick="toggle()" type="submit" value="submit" class="btn">
+            <div onclick="toggle()" id="close">✖</div>
+        </div>
+    </div>
+    <style>
       
+    </style>
      
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
