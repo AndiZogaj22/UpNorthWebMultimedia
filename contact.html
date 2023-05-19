@@ -18,6 +18,28 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script>
+  function function3(){
+    Swal.fire({
+  title: 'The Message Was Sent Successfully',
+  width: 600,
+  padding: '3em',
+  color: '#716add',
+  background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("https://sweetalert2.github.io/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+  }
+  
+</script>
+  <!--button alert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body>
     <div id="loader-wrapper">
@@ -108,7 +130,7 @@
             <input type="text" />
             <label for="">Message</label>
             <textarea name="" id="" cols="30" rows="05"></textarea>
-            <button>Send Message</button>
+            <button onclick="function3()">Send Message</button>
           </form>
         </div>
       </div>
