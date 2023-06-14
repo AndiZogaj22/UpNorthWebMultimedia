@@ -19,6 +19,8 @@
         <!--Loader-->
         <script src="js/loader.js"></script>
         <link rel="stylesheet" href="css/loader.css">
+
+        <script src="https://pixijs.download/v6.3.2/pixi.min.js"></script>
 </head>
 <body id="top">
   <div id="loader-wrapper">
@@ -412,6 +414,66 @@
                   </div>
               </div>
           </div>
+          <h4>Thank you for traveling with UpNorth Travel</h4>
+          <div id="canvas-container"></div>
+
+          <style>
+            h4{
+              margin-top: 600px;
+              margin-left: 550px;
+              font-size: 40px;
+            }
+             #canvas-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      
+     margin-bottom: auto;
+     background-color: rgb(223, 252, 253);
+    }
+          </style>
+          <script>
+            // Create a Pixi application
+    const app = new PIXI.Application({
+      width: 1500, // Increased width to 1000
+      height: 600,
+      backgroundColor: 0xffffff, // White background color
+      antialias: true,
+      resolution: window.devicePixelRatio || 1
+    });
+    document.getElementById('canvas-container').appendChild(app.view);
+
+    const imagePath = 'https://media.istockphoto.com/id/986387152/photo/airplane-isolated-on-white-background.jpg?s=170667a&w=0&k=20&c=Pm1aFHpEkBUfrso5qp_aimNDx1xS0ccpnI5Dgyp8hW8=';
+
+    const loader = new PIXI.Loader();
+    loader.add('airplane', imagePath).load(() => {
+      const airplane = new PIXI.Sprite(loader.resources.airplane.texture);
+      airplane.anchor.set(0.5);
+      airplane.x = -airplane.width / 2; // Start from the left side of the screen
+      airplane.y = app.screen.height / 2;
+      app.stage.addChild(airplane);
+
+      // Set initial variables for transverse wave motion
+      const amplitude = 50;
+      const frequency = 0.02;
+      let time = 0;
+
+      // Define the animation loop
+      app.ticker.add((delta) => {
+        time += delta;
+
+        // Calculate the wave motion for the airplane's y position
+        const waveOffset = Math.sin(time * frequency) * amplitude;
+        airplane.x += 2 * delta; // Move the airplane horizontally
+        airplane.y = app.screen.height / 2 + waveOffset; // Add wave motion to the y position
+
+        if (airplane.x > app.screen.width + airplane.width / 2) {
+          airplane.x = -airplane.width / 2; // Reset to the left side of the screen
+        }
+      });
+    });
+          </script>
           <script language="JavaScript">
             function function3() { 
               swal("Success!", "You have sucessfully booked your flight", "success");
